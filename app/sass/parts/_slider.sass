@@ -1,0 +1,60 @@
+.slider
+	margin: 0 0 93px 0
+	&__overlay
+		position: absolute
+		width: 520px
+		height: 193px
+		background-color: rgba($black, 0.5)
+		bottom: 20px
+		+md
+			width: 300px
+			height: auto
+		+phone
+			width: 230px
+			bottom: 10px
+	&__overtext
+		font-size: 30px
+		color: #FFF
+		padding: 15px
+		text-align: center
+		letter-spacing: 1px
+		+md
+			font-size: 20px
+		+phone
+			font-size: 10px
+			padding: 10px
+			
+.slick-track
+	height: auto
+.slick-dots
+	position: absolute
+	top: 0
+	margin: 0
+	padding: 0
+.slick-dots
+	text-align: center
+	width: 100%
+	& li
+		display: inline-block
+		list-style-type: none
+		margin: 0 10px
+	& button
+		background: transparent
+		font-weight: bold
+		font-size: 0
+		width: 15px
+		height: 15px
+		padding: 0
+		margin: 0
+		-webkit-border-radius: 50%
+		border-radius: 50%
+		border: 3px solid $tmpt-1
+.slick-active
+	button
+		background-color: $tmpt-1
+.slick-slide
+	outline: none
+.slick-slide img
+	display: block
+	height: 100%
+	width: 100%

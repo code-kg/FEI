@@ -1,0 +1,101 @@
+.itemblock
+	display: flex
+	-webkit-flex-wrap: wrap
+	-ms-flex-wrap: wrap
+	flex-wrap: wrap
+	-webkit-justify-content: space-between
+	justify-content: space-between
+	margin: 0 0 10px 0
+	+md
+		-webkit-justify-content: center
+		justify-content: center
+	&__main
+		width: 670px
+		display: block
+		text-decoration: none
+		background-color: $tmpt-1
+		+tablet
+			width: 100%
+		&:hover
+			background-color: #ffffff
+			
+	&__text
+		float: left
+		width: 375px
+		font-size: 29px
+		color: $black
+		padding: 35px 15px 0 15px
+		line-height: 1.1
+		+tablet
+			width: 100%
+			text-align: center
+			padding: 35px 15px
+	&__image
+		height: 100%
+		display: inline-block
+	&__imgblock
+		float: right
+		height: 100%
+		+tablet
+			float: none
+			height: auto
+			display: block
+			text-align: center
+			margin: 10px
+	&__sideblock
+		width: 487px
+		+md
+			display: none
+	&__sidetop
+		margin: 0 0 10px 0
+		overflow: hidden
+	&__sideinfo
+		float: left
+		width: 210px
+		font-size: 18px
+		color: #000
+		font-weight: bold
+		padding: 5px 10px
+	&__sideimage
+		float: right
+	&__sideimg
+		display: block
+		height: 100%
+	&__sidetext
+		padding: 0 0 20px 0
+	&__link
+		text-decoration: none
+		color: #000
+.content
+	&__blocks
+		margin: 0 0 100px 0
+	&__info
+		display: flex
+		-webkit-flex-wrap: wrap
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-justify-content: space-between
+		justify-content: space-between
+		margin: 0 0 30px 0
+	&__infotext
+		width: 670px
+		font-size: 30px
+		background-color: $tmpt-1
+		padding: 45px 100px 100px 30px
+		color: $white
+		+mdl
+			padding: 45px 45px 100px 45px
+			text-align: center
+		+md
+			width: 100%
+			text-align: center
+		+tablet
+			padding: 45px
+	&__infoimage
+		width: 477px
+		+md
+			display: none
+	&__infoimg
+		display: block
+		height: auto
+		width: 100%

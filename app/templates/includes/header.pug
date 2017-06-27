@@ -1,0 +1,13 @@
+header
+	.container
+		.header
+			.header__loginfo
+				p.header__address Элебесова 204а
+				a.header__logo(href="#")
+					img.header__logoimg(src="img/logo.png")
+				p.header__tel +996(312)67-92-08
+			nav.header__menu#menu
+				ul.header__menulist
+					each item in menu_item
+						li.header__menuitem
+							a.header__menulink(href="#")=item

@@ -1,0 +1,63 @@
+.newsblock
+	position: relative
+	margin: 0 0 85px 0
+	overflow: hidden
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0,0,0,0.7)
+		z-index: 1
+	&__bg
+		background: url("../upload/newsblock-bg.jpg") 50% 50% no-repeat
+		position: absolute
+		-webkit-background-size: cover
+		-o-background-size: cover
+		background-size: cover
+		height: 200%
+		width: 100%
+.news-block
+	z-index: 2
+	position: relative
+	display: flex
+	-webkit-flex-wrap: wrap
+	-ms-flex-wrap: wrap
+	flex-wrap: wrap
+	+mdl
+		-webkit-flex-wrap: nowrap
+		-ms-flex-wrap: nowrap
+		flex-wrap: nowrap
+	+md
+		-webkit-flex-wrap: wrap
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-justify-content: center
+		justify-content: center
+	&__block
+		width: 360px
+		margin: 65px 15px 30px 15px
+		+md
+			width: 300px
+	&__text
+		background-color: rgba($white, 0.5)
+		padding: 85px 68px 65px 68px
+		font-size: 30px
+		display: block
+		font-weight: bold
+		text-decoration: none
+		color: $white
+		+mdl
+			text-align: center
+			padding: 50px 20px
+		+md
+			padding: 10px
+			text-align: center
+	&__img
+		width: 100%
+	&__image
+		display: block
+		width: 100%
+		height: 100%
